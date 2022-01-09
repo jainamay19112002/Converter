@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Converter</title>
+         <link rel="shortcut icon" href="../images/port.png" type="image/x-icon">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="converter.css">
+    </head>
+    <body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+    <div class="max-width">
+    <div class="logo"><a href="#">Conver<span class="sion">sion</span></a></div>
+    <ul class="menu">
+    <li><a href="#Home" class="menu-btn">Home</a></li>
+    <li><a href="#Weight" class="menu-btn">Weight</a></li>
+    <li><a href="#Length" class="menu-btn">Length</a></li>
+    <li><a href="#Temperature" class="menu-btn">Temperature</a></li>
+    </ul>
+    <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+    
+    </div>
+    </nav>
+    <!--home section-->
+    <section class="home" id="home">
+    <div class="max-width">
+    <div class="homecontent">
+    <div class="text1">Welcome to the</div>
+    <div class="text2">World of <span class="new">Conversion</span></div>
+   <img class="conv" src="../converter/conv.png"alt="">
+   <img class="tmp" src="../converter/tmp.png"alt="">
+      <img class="lng" src="../converter/lng.png"alt="">
+       <img class="spd" src="../converter/spd.jpg"alt="">
+   </div>
+   </div>
+    </section>
+    <!--weight section -->
+   <section class="weight1" id="weight1">
+   <div class="max-width1">
+   <div class="weight1-content">
+   <h2 class="WeightConversion">Weight Conversion</h2>
+
+  <div class="row">
+
+  <div class="column">
+  <div class="card1">
+   <p><label>Enter in kilograms</label> <input type="number"  id="inputKilograms" placeholder="in kilograms" oninput="weightConverter1(this.value)" onchange="weightConverter1(this.value)"></p> 
+   <p>Grams: <span id="outputGrams1"></span></p>
+   <p>Pounds: <span id="outputPounds1"></span></p>
+   <p>Ounces: <span id="outputOunces1"></span></p>
+   </div>
+   </div>
+
+   
+   <div class="column">
+   <div class="card2">
+   <p><label>Enter in Pounds </label> <input type="number"  id="inputPounds" placeholder="in pounds" oninput="weightConverter2(this.value)" onchange="weightConverter2(this.value)"></p> 
+   <p>Grams: <span id="outputGrams2"></span></p>
+   <p>Kilograms: <span id="outputKilograms2"></span></p>
+   <p>Ounces: <span id="outputOunces2"></span></p>
+   </div>
+   </div>
+   
+  <div class="column">
+   <div class="card3">
+   <p><label>Enter in Grams</label> <input type="number" value="grams" placeholder="in grams" oninput="weightConverter3(this.value)" onchange="weightConverter3(this.value)"></p> 
+   <p>Kilograms: <span id="outputKilograms3"></span></p>
+   <p>Pounds: <span id="outputPounds3"></span></p>
+   <p>Ounces: <span id="outputOunces3"></span></p>
+   </div>
+   </div>
+   
+
+<div  class="column">
+ <div class="card4">
+<p> <label>Enter in Ounces</label> <input type="number" value="ounces" placeholder="in ounces" oninput="weightConverter4(this.value)" onchange="weightConverter4(this.value)"></p> 
+   <p>Grams: <span id="outputGrams4"></span></p>
+   <p>Pounds: <span id="outputPounds4"></span></p>
+   <p>Kilograms: <span id="outputKilograms4"></span></p>
+   </div>
+   </div>
+    </div>
+    </div>
+    </section>
+
+    
+<!--temperature section -->
+   <section class="temperature1" id="temperature1">
+   <div class="max-width1">
+   <div class="temperature1-content">
+   <h2 class="temperatureConversion">Temperature Conversion</h2>
+
+   <div class="row">
+
+  <div class="column">
+  <div class="card1">
+   <p><label>Enter in Celsius</label> <input type="number"  id="inputCelsius" placeholder="in Celsius" oninput="tempConverter1(this.value)" onchange="tempConverter1(this.value)"></p> 
+   <p>Faherenheit: <span id="outputFaherenheit1"></span></p>
+   <p>Kelvin: <span id="outputKelvin1"></span></p>
+   <p>Rankine: <span id="outputRankine1"></span></p>
+   </div>
+   </div>
+
+   <div class="column">
+  <div class="card2">
+   <p><label>Enter in Faherenheit</label> <input type="number"  id="inputFaherenheit" placeholder="in Faherenheit" oninput="tempConverter2(this.value)" onchange="weightConverter1(this.value)"></p> 
+   <p>Celsius: <span id="outputCelsius2"></span></p>
+   <p>Kelvin: <span id="outputKelvin2"></span></p>
+   <p>Rankine: <span id="outputRankine2"></span></p>
+   </div>
+   </div>
+
+   <div class="column">
+  <div class="card3">
+   <p><label>Enter in Kelvin</label> <input type="number"  id="inputKelvin" placeholder="in kelvin" oninput="tempConverter3(this.value)" onchange="tempConverter3(this.value)"></p> 
+   <p>Faherenheit: <span id="outputFaherenheit3"></span></p>
+   <p>Celsius: <span id="outputCelsius3"></span></p>
+   <p>Rankine: <span id="outputRankine3"></span></p>
+   </div>
+   </div>
+
+   <div class="column">
+  <div class="card4">
+   <p><label>Enter in Rankine</label> <input type="number"  id="inputRankine" placeholder="in Rankine" oninput="tempConverter4(this.value)" onchange="tempConverter4(this.value)"></p> 
+   <p>Faherenheit: <span id="outputFaherenheit4"></span></p>
+   <p>Kelvin: <span id="outputKelvin4"></span></p>
+   <p>Celsius: <span id="outputCelsius4"></span></p>
+   </div>
+   </div>
+   
+
+   
+   </div>
+    </div>
+    </section>
+
+    <!--length section -->
+    <section class="length1" id="length1">
+   <div class="max-width1">
+   <div class="length1-content">
+   <h2 class="lengthConversion">Length Conversion</h2>
+
+  <div class="row">
+
+  <div class="column">
+  <div class="card1">
+   <p><label>Enter in Metres</label> <input type="number"  id="inputMetres" placeholder="in Metres" oninput="lenConverter1(this.value)" onchange="lenConverter1(this.value)"></p> 
+   <p>Kilometres: <span id="outputKilometres1"></span></p>
+   <p>Feet: <span id="outputFeet1"></span></p>
+   <p>Inches: <span id="outputInches1"></span></p>
+   <p>Centimetres: <span id="outputCentimetres1"></span></p>
+   </div>
+   </div>
+
+   <div class="column">
+  <div class="card2">
+   <p><label>Enter in Km</label> <input type="number"  id="inputKilometres" placeholder="in Kilometres" oninput="lenConverter2(this.value)" onchange="lenConverter2(this.value)"></p> 
+   <p>Metres: <span id="outputMetres2"></span></p>
+   <p>Feet: <span id="outputFeet2"></span></p>
+   <p>Inches: <span id="outputInches2"></span></p>
+   <p>Centimetres: <span id="outputCentimetres2"></span></p>
+   </div>
+   </div>
+
+   <div class="column">
+  <div class="card3">
+   <p><label>Enter in Feet</label> <input type="number"  id="inputFeet" placeholder="in feet" oninput="lenConverter3(this.value)" onchange="lenConverter3(this.value)"></p> 
+   <p>Metres: <span id="outputMetres3"></span></p>
+   <p>Kilometres: <span id="outputKilometres3"></span></p>
+   <p>Inches: <span id="outputInches3"></span></p>
+   <p>Centimetres: <span id="outputCentimetres3"></span></p>
+   </div>
+   </div>
+
+   <div class="column">
+  <div class="card4">
+   <p><label>Enter in Inches</label> <input type="number"  id="inputInches" placeholder="in inches" oninput="lenConverter4(this.value)" onchange="lenConverter4(this.value)"></p> 
+   <p>Metres: <span id="outputMetres4"></span></p>
+   <p>Feet: <span id="outputFeet4"></span></p>
+   <p>Kilometres: <span id="outputKilometres4"></span></p>
+   <p>Centimetres: <span id="outputCentimetres4"></span></p>
+   </div>
+   </div>
+
+   <div class="column">
+  <div class="card5">
+   <p><label>Enter in Cm</label> <input type="number"  id="inputCentimetres" placeholder="in centimetre" oninput="lenConverter5(this.value)" onchange="lenConverter5(this.value)"></p> 
+   <p>Metres: <span id="outputMetres5"></span></p>
+   <p>Feet: <span id="outputFeet5"></span></p>
+   <p>Inches: <span id="outputInches5"></span></p>
+   <p>Kilometres: <span id="outputKilometres5"></span></p>
+   </div>
+   </div>
+
+   
+   
+
+
+
+    
+    
+
+        
+        <script src="converter.js"></script>
+    </body>
+</html>

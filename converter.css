@@ -1,0 +1,499 @@
+                                            * {
+                                                margin: 0;
+                                                padding: 0;
+                                                box-sizing: border-box;
+                                                text-decoration: none;
+                                            }
+                                            
+                                            html {
+                                                scroll-behavior: smooth;
+                                            }
+                                            /* custom scroll bar */
+                                            
+                                             ::-webkit-scrollbar {
+                                                width: 10px;
+                                            }
+                                            
+                                             ::-webkit-scrollbar-track {
+                                                background: #f1f1f1;
+                                            }
+                                            
+                                             ::-webkit-scrollbar-thumb {
+                                                background: #d4bbb1;
+                                            }
+                                            
+                                             ::-webkit-scrollbar-thumb:hover {
+                                                background: #555;
+                                            }
+                                            
+                                            .max-width {
+                                                max-width: 1300px;
+                                                padding: 0 80px;
+                                                margin: auto;
+                                            }
+                                            /* menu btn styling */
+                                            
+                                            .menu-btn {
+                                                color: #fff;
+                                                font-size: 23px;
+                                                cursor: pointer;
+                                                display: none;
+                                            }
+                                            
+                                            .scroll-up-btn {
+                                                position: fixed;
+                                                height: 45px;
+                                                width: 42px;
+                                                background: #CC00FF;
+                                                right: 30px;
+                                                bottom: 10px;
+                                                text-align: center;
+                                                line-height: 45px;
+                                                color: #fff;
+                                                z-index: 9999;
+                                                font-size: 30px;
+                                                border-radius: 6px;
+                                                border-bottom-width: 2px;
+                                                cursor: pointer;
+                                                opacity: 0;
+                                                pointer-events: none;
+                                                transition: all 0.3s ease;
+                                            }
+                                            
+                                            .scroll-up-btn.show {
+                                                bottom: 30px;
+                                                opacity: 1;
+                                                pointer-events: auto;
+                                            }
+                                            
+                                            .scroll-up-btn:hover {
+                                                filter: brightness(90%);
+                                            }
+                                            /*home section styling*/
+                                            
+                                            .home {
+                                                display: block;
+                                                background-color: #c8fd3d;
+                                                min-height: 600px;
+                                                background-size: cover;
+                                                background-attachment: fixed;
+                                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                            }
+                                            
+                                            .home .max-width {
+                                                margin: auto 0 auto 40px;
+                                            }
+                                            
+                                            .home .homecontent .text1 {
+                                                font-size: 50px;
+                                                text-align: center;
+                                                color: #111;
+                                                margin-top: 50px;
+                                                padding-top: 175px;
+                                                font-weight: bold;
+                                                margin-bottom: 25px;
+                                            }
+                                            
+                                            .home .homecontent .text2 {
+                                                color: #111;
+                                                font-size: 60px;
+                                                margin-left: -3px;
+                                                text-align: center;
+                                                font-weight: 700;
+                                            }
+                                            
+                                            .home .homecontent .text2 span {
+                                                color: #111;
+                                                text-align: center;
+                                                font-weight: bold;
+                                            }
+                                            
+                                            .conv {
+                                                display: block;
+                                                position: absolute;
+                                                right: 70px;
+                                                bottom: 70px;
+                                                height: 200px;
+                                            }
+                                            
+                                            .tmp {
+                                                display: block;
+                                                position: absolute;
+                                                left: 70px;
+                                                bottom: 70px;
+                                                height: 200px;
+                                            }
+                                            
+                                            .lng {
+                                                display: block;
+                                                position: absolute;
+                                                left: 70px;
+                                                top: 70px;
+                                                height: 200px;
+                                            }
+                                            
+                                            .spd {
+                                                display: block;
+                                                position: absolute;
+                                                right: 70px;
+                                                top: 70px;
+                                                height: 200px;
+                                            }
+                                            /* navbar styling */
+                                            
+                                            .navbar {
+                                                background: #111;
+                                                top: 0;
+                                                width: 100%;
+                                                position: fixed;
+                                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                            }
+                                            
+                                            .navbar.sticky {
+                                                padding: 15px 0;
+                                                background: #CC00FF;
+                                            }
+                                            
+                                            .navbar .max-width {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: space-between;
+                                            }
+                                            
+                                            .navbar .logo a {
+                                                color: lightseagreen;
+                                                font-size: 35px;
+                                                font-weight: 600;
+                                            }
+                                            
+                                            .navbar .logo a span {
+                                                color: lightpink;
+                                                transition: all 0.3s ease;
+                                            }
+                                            
+                                            .navbar .menu li {
+                                                list-style: none;
+                                                display: inline-block;
+                                            }
+                                            
+                                            .navbar .menu li a {
+                                                display: inline-block;
+                                                color: lightseagreen;
+                                                font-size: 15px;
+                                                font-weight: 700;
+                                                margin-left: 25px;
+                                                transition: color 0.3 ease;
+                                            }
+                                            
+                                            .navbar .menu li a:hover {
+                                                color: greenyellow;
+                                            }
+                                            
+                                            .navbar.sticky .menu li a:hover {
+                                                color: greenyellow;
+                                            }
+                                            /* menu btn styling */
+                                            
+                                            .menu-btn {
+                                                color: #fff;
+                                                font-size: 23px;
+                                                cursor: pointer;
+                                                display: none;
+                                            }
+                                            
+                                            .scroll-up-btn {
+                                                position: fixed;
+                                                height: 45px;
+                                                width: 42px;
+                                                background: #111;
+                                                right: 30px;
+                                                bottom: 10px;
+                                                text-align: center;
+                                                line-height: 45px;
+                                                color: #fff;
+                                                z-index: 9999;
+                                                font-size: 30px;
+                                                border-radius: 6px;
+                                                border-bottom-width: 2px;
+                                                cursor: pointer;
+                                                opacity: 0;
+                                                pointer-events: none;
+                                                transition: all 0.3s ease;
+                                            }
+                                            
+                                            .scroll-up-btn.show {
+                                                bottom: 30px;
+                                                opacity: 1;
+                                                pointer-events: auto;
+                                            }
+                                            
+                                            .scroll-up-btn:hover {
+                                                filter: brightness(90%);
+                                            }
+                                            /*weight styling */
+                                            
+                                            .weight1 {
+                                                display: flex;
+                                                text-align: justify;
+                                                max-width: 100%;
+                                                height: 400px;
+                                                background-size: cover;
+                                                background-position: fixed;
+                                                background-color: #111;
+                                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                            }
+                                            
+                                            .weight1 .WeightConversion {
+                                                background-color: #111;
+                                                text-align: center;
+                                                color: lightcoral;
+                                                padding: 25px;
+                                            }
+                                            
+                                            .weight1 .column {
+                                                float: left;
+                                                width: 25%;
+                                                padding: 40px 30px;
+                                                height: 200px;
+                                            }
+                                            
+                                            .weight1 .card1 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: lightgreen;
+                                                border-style: solid;
+                                                border-color: darkgreen;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .weight1 .card2 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: lightpink;
+                                                border-style: solid;
+                                                border-color: palevioletred;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .weight1 .card3 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: lightsalmon;
+                                                border-style: solid;
+                                                border-color: darkorange;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .weight1 .card4 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: lightseagreen;
+                                                border-style: solid;
+                                                border-color: darkcyan;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .weight1 .column label {
+                                                text-align: center;
+                                            }
+                                            
+                                            .weight1 .column p {
+                                                text-align: left;
+                                                font-weight: bold;
+                                            }
+                                            
+                                            .weight1 .column label {
+                                                text-align: center;
+                                                font-weight: bold;
+                                                color: solid black;
+                                            }
+                                            /*temperature section*/
+                                            
+                                            .temperature1 {
+                                                display: flex;
+                                                text-align: justify;
+                                                max-width: 100%;
+                                                height: 400px;
+                                                background-size: cover;
+                                                background-position: fixed;
+                                                background-color: #111;
+                                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                            }
+                                            
+                                            .temperature1 .temperatureConversion {
+                                                background-color: #111;
+                                                margin-top: 20px;
+                                                height: 100px;
+                                                text-align: center;
+                                                color: lightcoral;
+                                                padding: 45px;
+                                            }
+                                            
+                                            .temperature1 .column {
+                                                float: left;
+                                                width: 25%;
+                                                padding: 40px 30px;
+                                                height: 200px;
+                                            }
+                                            
+                                            .temperature1 .card1 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: lightslategray;
+                                                border-style: solid;
+                                                border-color: darkgray;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .temperature1 .card2 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #feff7f;
+                                                border-style: solid;
+                                                border-color: yellow;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .temperature1 .card3 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #c8fd3d;
+                                                border-style: solid;
+                                                border-color: darkolivegreen;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .temperature1 .card4 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #d6fffe;
+                                                border-style: solid;
+                                                border-color: yellow;
+                                                border-width: 4px;
+                                            }
+                                            
+                                            .temperature1 .column label {
+                                                text-align: center;
+                                            }
+                                            
+                                            .temperature1 .column p {
+                                                text-align: left;
+                                                font-weight: bold;
+                                            }
+                                            
+                                            .temperature1 .column label {
+                                                text-align: center;
+                                                font-weight: bold;
+                                                color: solid black;
+                                            }
+                                            /*length stylin*/
+                                            
+                                            .length1 {
+                                                display: flex;
+                                                text-align: justify;
+                                                max-width: 100%;
+                                                height: 450px;
+                                                background-size: cover;
+                                                background-position: fixed;
+                                                background-color: #111;
+                                                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                                            }
+                                            
+                                            .length1 .lengthConversion {
+                                                background-color: #111;
+                                                text-align: center;
+                                                color: lightcoral;
+                                                padding: 45px;
+                                            }
+                                            
+                                            .length1 .column {
+                                                float: left;
+                                                width: 20%;
+                                                padding: 40px 30px;
+                                                height: 200px;
+                                            }
+                                            
+                                            .length1 .card1 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #cfe09d;
+                                                border-style: solid;
+                                                border-color: darkseagreen;
+                                                border-width: 4px;
+                                                padding-left: 4px;
+                                            }
+                                            
+                                            .length1 .card2 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #def7fe;
+                                                border-style: solid;
+                                                border-color: darkgray;
+                                                border-width: 4px;
+                                                padding-left: 4px;
+                                            }
+                                            
+                                            .length1 .card3 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #e5ccbd;
+                                                border-style: solid;
+                                                border-color: burlywood;
+                                                border-width: 4px;
+                                                padding-left: 4px;
+                                            }
+                                            
+                                            .length1 .card4 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #f1f33f;
+                                                border-style: solid;
+                                                border-color: yellow;
+                                                border-width: 4px;
+                                                padding-left: 4px;
+                                            }
+                                            
+                                            .length1 .card5 {
+                                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                text-align: center;
+                                                padding: 35px;
+                                                background-color: #d4bbb1;
+                                                border-style: solid;
+                                                border-color: blanchedalmond;
+                                                border-width: 4px;
+                                                padding-left: 4px;
+                                            }
+                                            
+                                            .length1 .column label {
+                                                text-align: center;
+                                            }
+                                            
+                                            .length1 .column p {
+                                                text-align: left;
+                                                font-weight: bold;
+                                            }
+                                            
+                                            .length1 .column label {
+                                                text-align: center;
+                                                font-weight: bold;
+                                                color: solid black;
+                                            }
+                                            
+                                            @media only screen and (max-width: 768px) {
+                                                /* For mobile phones: */
+                                                [class*="column"] {
+                                                    width: 100%;
+                                                }
+                                            }
